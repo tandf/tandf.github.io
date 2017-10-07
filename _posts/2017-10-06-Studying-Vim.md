@@ -44,7 +44,7 @@ category: Vim
 
 ### 6 重新映射Caps Lock
 
-#### ubuntu
+- #### ubuntu
 `sudo apt install gnome-tweak-tool`
 
 搜索ctrl，并进行设置（巨easy）
@@ -53,13 +53,13 @@ tty1-6中设置方法见[ linux下键盘映射 hsnotebook的ChinaUnix博客 ](ht
 
 *这里有一个坑：很多教程会指导你用xmodmap或者xkbmap。但在使用fcitx的情况下，每当切换键盘布局，比如从中文切换到英文，都会重置这个设置。努力一天没能解决这个问题。(ubuntu16)*
 
-#### windows
+- #### windows
 `Win + R` 输入 `regedit`
 插入二进制值
 
 ``````
-Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+
 "Scancode Map"=hex:00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00
 ``````
 

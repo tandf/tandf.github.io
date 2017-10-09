@@ -6,7 +6,7 @@ category: C++
 
 ---
 
-C++ Primer ed5 中提到一种技术（P209)，通过使用 `const_cast` 重载函数以减少代码重复的情况：
+«C++ Primer ed5» 中提到一种技术（P209)，通过使用 `const_cast` 重载函数以减少代码重复的情况：
 
 
 若已有函数：
@@ -29,7 +29,7 @@ string &shorterString(string &s1, string &s2){
 }
 ``````
 
-C++ Primer 上对 `const_cast` 是这样解释的：
+«C++ Primer» 上对 `const_cast` 是这样解释的：
 >将常量对象转换成非常量对象的行为，我们一般称其为“去掉 const 性质（cast away the const）”。
 >一旦我们无掉了某个对象的 const 性质，编译器就不再阻止我们对该对象进行读写操作。
 >如果对象本身不是一个常量，使用强制类型转换获得写权限是合法的行为。

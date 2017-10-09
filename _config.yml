@@ -14,16 +14,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 github_username: tandf
 
 # Build settings
-#markdown: kramdown
-#kramdown:
-  #input: GFM
-
-markdown: redcarpet
-redcarpet:
-    extensions: ["hard_wrap","autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]
-
+markdown: kramdown
+kramdown:
+  input: GFM
 highlighter: pygments
-pygments: true
 
 # Third-party services
 # just leave someone empty to disable it

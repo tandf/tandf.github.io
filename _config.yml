@@ -11,12 +11,18 @@ email: tandf@live.cn
 #description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://wildflame.me" # the base hostname & protocol for your site
-github_username:  tandf
+github_username: tandf
 
 # Build settings
-markdown: kramdown
-kramdown:
-  input: GFM
+#markdown: kramdown
+#kramdown:
+  #input: GFM
+
+markdown: redcarpet
+redcarpet:
+    extensions: ["hard_wrap","autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]
+
+highlighter: pygments
 
 # Third-party services
 # just leave someone empty to disable it

@@ -13,7 +13,9 @@ category: Vim
 
 <!--description-->
 
+<br>
 # 《 Vim 实用技巧 》笔记
+<br>
 
 ### 1 查找模式与重复修改
 使用`.`命令重复上一次的修改操作。
@@ -48,7 +50,9 @@ category: Vim
 
 - #### ubuntu
 
-`sudo apt install gnome-tweak-tool`
+```bash
+sudo apt install gnome-tweak-tool
+```
 
 搜索 ctrl，并进行设置（巨 easy）
 

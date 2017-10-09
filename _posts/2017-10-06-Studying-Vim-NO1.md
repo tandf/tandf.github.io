@@ -50,9 +50,9 @@ category: Vim
 
 - #### ubuntu
 
-```bash
+``````
 sudo apt install gnome-tweak-tool
-```
+``````
 
 搜索 ctrl，并进行设置（巨 easy）
 

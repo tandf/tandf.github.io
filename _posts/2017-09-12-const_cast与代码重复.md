@@ -11,7 +11,7 @@ category: C++
 
 若已有函数：
 
-``````C++
+``````c++
 const string& shorterString(const string &s1, const string &s2){
     return s1.size() <= s2.size() ? s1 : s2;
 }
@@ -21,7 +21,7 @@ const string& shorterString(const string &s1, const string &s2){
 
 则可以这样使用 `const_cast` 避免代码重复：
 
-``````C++
+``````c++
 string &shorterString(string &s1, string &s2){
     // 理论上应使用 static_cast 来将 const 类型转换为 const 类型
     auto &r = shorterString(const_cast<const string&>(s1), const_cast<const string&>(s2));
@@ -42,7 +42,7 @@ string &shorterString(string &s1, string &s2){
 
 在 C++ 中，我们常用到成员函数。自然而然地，我们会产生一个疑问：若一个成员函数需要这样的重载，尤其是需要对 `this` 指针进行类型转换，该如何操作呢？ Google 之，得到以下解决方案。
 
-``````C++
+``````c++
 // 若有一个读取数组元素的函数，需要重载得到非常量版本
 const int& myMatrix::element(int x, int y) const {
 //try catch is omitted
@@ -60,7 +60,7 @@ int& myMatrix::element(int x, int y) {
 对于防止代码重复，还有一些应当注意的（来自 Primer）：
 1. 有时需要定义一个严格弱序（P396），譬如使用 `multiset` 时。定义了一个 `operator<` 后，可以很快定义出 `operator>` 和 `operator==`
 
-``````C++
+``````c++
 bool operator<(T a);
 bool operator>(T a){
     return *this < a;

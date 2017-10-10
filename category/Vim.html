@@ -26,7 +26,6 @@ title: Vim
       <footer class="post_meta">
 
         {% for category in post.categories %}
-        <!--NOTE 分类链接-->
           <a href="{{"/category/" | append: category | append: ".html" | prepend: site.baseurl }}">
           <data data-icon="ei-archive" href=></data>
           {{category}}</a>

@@ -82,7 +82,7 @@ category: Vim
 ### 5 标签页
 `tabe[dit] {filename}`打开标签页，省略{filename}则标签页包含空缓冲区。`tabc[lose]`关闭当前标签页，`tabo[nly]`仅保留当前标签页。
 
-<C-w>T 将当前窗口移至新标签页。
+\<C-w>T 将当前窗口移至新标签页。
 
 {num}gt 移动到编号为{num}的标签页，gt 切换到下一标签页。对应的 Ex 命令为`:tabn[ext] {N}`和`:tabn[ext]`。gT 移动至上一个标签页，对应的 Ex 命令为`:tabp[reviews]`。
 

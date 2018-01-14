@@ -100,7 +100,7 @@ vim 中的正则表达式和我之前学过的不太一样诶~
 
 *为什么要使用 <C-R>=@/ 而不是 <C-R>/ 呢？因为后者可能会将 / 寄存器中的某些字符看作特殊字符。*
 
-另外也给出了作者写的插件，我当然选择使用插件（毕竟无脑多了 [ github 地址 ] (https://github.com/nelstrom/vim-visual-star-search) ，使用 Vundle 安装的方法自行百度。不过写脚本的方法值得参考学习，因此还是记录下来。
+另外也给出了作者写的插件，我当然选择使用插件（毕竟无脑多了 [ github 地址 ](https://github.com/nelstrom/vim-visual-star-search) ，使用 Vundle 安装的方法自行百度。不过写脚本的方法值得参考学习，因此还是记录下来。
 
 ## 替换
 命令的一般形式

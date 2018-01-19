@@ -49,7 +49,7 @@ chrome 官网下载，登录并同步设置、书签
 
 *手掌检测部分效果不算好，应该可以进一步设置，暂未研究*
 
-[ 参考 ](https://wiki.archlinux.org/index.php/Touchpad_Synaptics#xorg.conf.d.2F70-synaptics.conf_does_not_seem_to_apply_in_MATE)
+[ 参考 ](https://wiki.archlinux.org/index.php/Touchpad_Synaptics#Configuration)
 
 ## 6 安装 ss-qt
 略

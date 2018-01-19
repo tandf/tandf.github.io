@@ -10,13 +10,13 @@ category: linux
 
 <!--description-->
 
-## 输入法
+## 1 输入法
 fcitx 加入英语、双拼，默认英语
 
-## 浏览器
+## 2 浏览器
 chrome 官网下载，登录并同步设置、书签
 
-## vim
+## 3 vim
 1. 卸载 vim、vim-tiny，安装 vim-gtk
 2. vimrc 相关
 
@@ -26,10 +26,10 @@ chrome 官网下载，登录并同步设置、书签
 
     2.3 vim 中执行 `:PluginInstall`
 
-## 重映射 Caps Lock
+## 4 重映射 Caps Lock
 执行 `sudo apt install gnome-tweak-tool` ，搜索 "ctrl" 并将 Caps Lock 设置为 LCtrl。
 
-## 触摸板设置
+## 5 触摸板设置
 
     sudo cp /usr/share/X11/xorg.conf.d/70-synaptics.conf /etc/X11/xorg.conf.d/70-synaptics.conf
 
@@ -51,10 +51,10 @@ chrome 官网下载，登录并同步设置、书签
 
 [ 参考 ](https://wiki.archlinux.org/index.php/Touchpad_Synaptics#xorg.conf.d.2F70-synaptics.conf_does_not_seem_to_apply_in_MATE)
 
-## 安装 ss-qt
+## 6 安装 ss-qt
 略
 
-## 设置 vim 默认打开文件
+## 7 设置 vim 默认打开文件
 打开默认配置文件
 
     sudo vim /etc/gnome/defaults.list

@@ -32,6 +32,7 @@ chrome 官网下载，登录并同步设置、书签
 ## 5 触摸板设置
 
     sudo cp /usr/share/X11/xorg.conf.d/70-synaptics.conf /etc/X11/xorg.conf.d/70-synaptics.conf
+    sudo vim /etc/X11/xorg.conf.d/70-synaptics.conf
 
 末尾添加：
 
@@ -43,11 +44,11 @@ chrome 官网下载，登录并同步设置、书签
             Option "SoftButtonAreas" "0 0 0 0 50% 0 82% 0"
             Option "LockedDrags" "1"
             Option "PalmDetect" "1"
+            Option "PalmMinWidth" "1"
+            Option "PalmMinz" "1"
     EndSection
 
 功能：触摸板右键设置为鼠标中键、拖拽选择、手掌检测
-
-*手掌检测部分效果不算好，应该可以进一步设置，暂未研究*
 
 [ 参考 ](https://wiki.archlinux.org/index.php/Touchpad_Synaptics#Configuration)
 

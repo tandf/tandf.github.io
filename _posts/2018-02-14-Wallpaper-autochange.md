@@ -10,13 +10,15 @@ Windows 下很容易就能实现多壁纸自动切换，那 Linux 下能不能�
 
 <!--description-->
 
-** 注：本文所述方法在 Ubuntu 16.04 下实验有效，理论上适用于使用 Gnome 桌面系统的所有情况 **
+**注：本文所述方法在 Ubuntu 16.04 下实验有效，理论上适用于使用 Gnome 桌面系统的所有情况**
 
 主要原理及方法见 [博客园一篇文章](http://www.cnblogs.com/youxia/p/linux030.html "让 Ubuntu 桌面自动更换壁纸 - 京山游侠 - 博客园") 。重要的东西这篇文章里都讲完了，我只能狗尾续貂一下。
 
 自动切换壁纸主要由两个 XML 文件控制，一个是 `/usr/share/backgrounds/contest/\*.XML` ，主要作用是定义某个壁纸切换方案，格式可以参见此目录下任意文件。另一个是 `/usr/share/gnome-background-properties/xenial-wallpapers.XML` ，这个文件定义了哪些壁纸（或者壁纸切换方案）会在系统设置中显示出来。
 
 ## 使用脚本生成第一个 XML 文件的内容
+
+<small> （好像大部分都是抄的） </small>
 
 参考原有文件可发现，第一个 XML 文件无非两个主要模块：某壁纸静态时间、此壁纸切换动画及切换时长，使用 bash 脚本可以减少大量工作。
 

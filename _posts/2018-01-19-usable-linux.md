@@ -10,6 +10,8 @@ category: linux
 
 <!--description-->
 
+** 注 : Ubuntu 16.04 系统，带图形化界面 **
+
 ## 1 输入法
 fcitx 加入英语、双拼，默认英语
 
@@ -74,3 +76,12 @@ chrome 官网下载，登录并同步设置、书签
 
     +"p
     :%s/gedit.desktop/vim.desktop/g
+
+## 8 Ubuntu 双系统时间同步
+Windows 电脑下装 Ubuntu 双系统后，会出现 Windows 时间出错的问题。查资料后发现这是因为两种系统管理时间方式不同，具体原理见参考资料。解决办法很简单，在 Ubuntu 系统中运行：
+
+    sudo timedatectl set-local-rtc 1
+
+即可解决问题。
+
+[参考资料](https://www.jianshu.com/p/34b486e9fe75 "解决 Windows 与 Ubuntu 双系统时间同步问题 - 简书")

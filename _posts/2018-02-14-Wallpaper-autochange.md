@@ -96,7 +96,7 @@ Windows 下很容易就能实现多壁纸自动切换，那 Linux 下能不能�
         sudo chmod =666 /usr/share/backgrounds/contest/autochange.xml
     fi
 
-    . /usr/local/bin/WallpaperAutoChange.sh > /usr/share/backgrounds/contest/autochange.xml
+    . WallpaperAutoChange.sh > /usr/share/backgrounds/contest/autochange.xml
 
 - 由于 `/usr/share/backgrounds/contest/` 目录的权限设置，一般用户无权新建，故当不存在目标 XML 文件时，需使用 `sudo` 命令新建文件。但如此一来新建的文件所有者将为 root ，根据系统的文件默认权限不同，可能会使得每次更改此文件都需要输入密码。这个文件并不是什么关键文件，因此将其权限改为所有用户可读取、修改。
 
@@ -110,3 +110,12 @@ Windows 下很容易就能实现多壁纸自动切换，那 Linux 下能不能�
          <name>auto change</name>
          <filename>/usr/share/backgrounds/contest/autochange.xml</filename>
      </wallpaper>
+
+## 将脚本放入用户脚本目录
+到现在为止，将两个脚本放在同一目录，并指定目录运行脚本，就可以完成 XML 文件更新的功能。
+
+为了能在任意目录执行更新脚本命令，也为了妥善放置脚本，应当将脚本放置在 `/usr/local/bin` 目录。这个目录是专门用于放置用户脚本的，并且默认在 PATH 路径中（执行命令时 bath 会到 PATH 路径中查找命令。可通过 `echo $PATH`查看 PATH 路径）。
+
+观察 PATH 路径可发现，还有一个 `/usr/local/sbin` 目录，这个目录用于存放系统命令，通常只有管理员可运行。此外，还有 `/usr/bin` `/usr/sbin` `/bin` `/sbin` 目录，其中前两个通常为用户安装脚本，后两个用于存放重要的系统命令。
+
+至此，直接输入 `generate_wallpaper_autochange.sh` 即可更新壁纸切换文件。

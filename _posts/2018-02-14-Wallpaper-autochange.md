@@ -24,8 +24,10 @@ Windows 下很容易就能实现多壁纸自动切换，那 Linux 下能不能�
 
 一下脚本用于生成第一个 XML 文件的内容：
 
-    # WallpaperAutoChange.sh
     #!/bin/bash
+
+    # /usr/local/bin/WallpaperAutoChange.sh
+
     read -p 'input delay time for every picture (10 by default) : ' static_time
     if [[ $static_time == '' ]] ; then
         static_time=10
@@ -90,6 +92,8 @@ Windows 下很容易就能实现多壁纸自动切换，那 Linux 下能不能�
 <small> （这一脚本自己写的成分稍多一点） </small>
 
     #!/bin/bash
+
+    # /usr/local/bin/generate_wallpaper_autochange.sh
 
     if [ ! -f /usr/share/backgrounds/contest/autochange.xml ] ; then
         sudo touch /usr/share/backgrounds/contest/autochange.xml

@@ -17,7 +17,7 @@ github_username: tandf
 markdown: kramdown
 kramdown:
   input: GFM
-highlighter: pygments
+highlighter: rouge
 
 # Third-party services
 # just leave someone empty to disable it

@@ -1,7 +1,7 @@
 ---
 
 layout: post
-2itle: 古代中国-欧洲交流史 Class3
+title: 古代中国-欧洲交流史 Class3
 category: Other
 
 ---

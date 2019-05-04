@@ -88,11 +88,19 @@ Windows 电脑下装 Ubuntu 双系统后，会出现 Windows 时间出错的问�
 
 ## 9 有关中文版 Ubuntu
 如果安装了中文版 Ubuntu ，home 路径下的文件夹名称都是“下载”“文档”这样的中文名称，不便于在命令行中定位。
-在终端中执行：
 
-    export LANG=en_US
-    xdg-user-dirs-gtk-update
+打开终端，在终端中输入命令：
 
-即可更改文件夹名称为英文版。
+        export LANG=en_US
+
+        xdg-user-dirs-gtk-update
+
+跳出对话框询问是否将目录转化为英文路径，同意并关闭。
+在终端中输入命令：
+
+        export LANG=zh_CN
+
+
+关闭终端，并重起。 下次进入系统，系统会提示是否把转化好的目录改回中文。 选择不再提示，并取消修改。 主目录的中文转英文就完成了~
 
 [参考资料](https://blog.csdn.net/l0605020112/article/details/20285239)

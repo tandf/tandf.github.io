@@ -60,14 +60,14 @@ int& myMatrix::element(int x, int y) {
 对于防止代码重复，还有一些应当注意的（来自 Primer）：
 1. 有时需要定义一个严格弱序（P396），譬如使用 `multiset` 时。定义了一个 `operator<` 后，可以很快定义出 `operator>` 和 `operator==`
 
-``````c++
-bool operator<(T a);
-bool operator>(T a){
-    return *this < a;
-}
-bool operator==(T a){
-    return ! ((*this < a) || (*this > a));
-{
-``````
+    ``````c++
+    bool operator<(T a);
+    bool operator>(T a){
+        return *this < a;
+    }
+    bool operator==(T a){
+        return ! ((*this < a) || (*this > a));
+    {
+    ``````
 
 2. 同理，定义前置和后置 `++` 时在后置运算符 `operator++(int)` 中调用前置运算符  `operator++`

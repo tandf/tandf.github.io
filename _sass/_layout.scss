@@ -4,6 +4,11 @@ html,.container {
   min-height:100%;
 }
 
+html ::selection{
+    background:#666;
+    color:#DDD;
+}
+
 body {
   min-height:100%;
   height:auto;

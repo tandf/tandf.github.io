@@ -85,3 +85,14 @@ Windows 电脑下装 Ubuntu 双系统后，会出现 Windows 时间出错的问�
 即可解决问题。
 
 [参考资料](https://www.jianshu.com/p/34b486e9fe75 "解决 Windows 与 Ubuntu 双系统时间同步问题 - 简书")
+
+## 9 有关中文版 Ubuntu
+如果安装了中文版 Ubuntu ，home 路径下的文件夹名称都是“下载”“文档”这样的中文名称，不便于在命令行中定位。
+在终端中执行：
+
+    export LANG=en_US
+    xdg-user-dirs-gtk-update
+
+即可更改文件夹名称为英文版。
+
+[参考资料](https://blog.csdn.net/l0605020112/article/details/20285239)
